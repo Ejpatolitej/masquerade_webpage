@@ -1,9 +1,9 @@
+import UserGreeting from './components/UserGreeting';
+
 function App() {
   return (
     <>
-      <div className='announcement'>
-        <h1>COMING SOON...</h1>
-      </div>
+      <UserGreeting />
     </>
   );
 }

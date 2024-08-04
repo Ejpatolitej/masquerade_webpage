@@ -9,7 +9,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   margin: 0;
-  color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 59%);
 }
 
 a {
@@ -17,6 +17,16 @@ a {
   font-weight: 400;
   font-style: normal;
   color: hsl(0, 0%, 10%);
+}
+
+.announcement {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 300%;
+  color: beige;
+  font-weight: 400;
 }
 
 .student {
@@ -70,4 +80,16 @@ a {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+}
+
+body {
+  background-image: url(assets\Art_Deco_Wallpaper.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.bannerimg {
+  max-width: 80%;
 }

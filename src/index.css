@@ -109,9 +109,9 @@ body {
 .hero-image .hero-text {
   background: linear-gradient(
     180deg,
-    hsl(44, 100%, 25%) 0%,
+    hsl(37, 54%, 21%) 0%,
     hsl(49, 100%, 41%) 50%,
-    hsl(44, 100%, 25%) 100%
+    hsl(37, 54%, 21%) 100%
   );
   font-family: 'Pinyon Script', cursive;
   font-weight: 400;

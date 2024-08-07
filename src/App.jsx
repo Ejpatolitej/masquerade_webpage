@@ -1,14 +1,33 @@
 function App() {
   return (
     <>
-      <div className='hero-image'>
-        <h1 className='hero-text'>Autumn</h1>
-        <h1 className='hero-text'>Masquerade</h1>
+      <div className='content-div'>
+        <div className='hero-image'>
+          <h1 className='hero-text'>Höstbalen</h1>
+          <h1 className='hero-text'>2024</h1>
+        </div>
+        <div>
+          <h2>15e Oktober | Rådhuset</h2>
+        </div>
+        <div className='info-image-left'>
+          <h1 className='info-text'>
+            Välkomna till våran Höstmaskerad!
+            <br></br>
+            Plocka fram era finaste balkläder och på med en elegant mask.
+            <br></br>
+            Upplev en fantastisk kväll med dans, mat, och dryck.
+          </h1>
+        </div>
+        <div className='info-image-right'>
+          <h1 className='info-text'>
+            Välkomna till våran Höstmaskerad!
+            <br></br>
+            Plocka fram era finaste balkläder och på med en elegant mask.
+            <br></br>
+            Upplev en fantastisk kväll med dans, mat, och dryck.
+          </h1>
+        </div>
       </div>
-      <div>
-        <h1 className='info-text'>15e Oktober | Rådhuset</h1>
-      </div>
-      <h1 className='announcement'>COMING SOON...</h1>
     </>
   );
 }

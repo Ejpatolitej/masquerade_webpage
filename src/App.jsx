@@ -1,3 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CarouselFadeExample from './components/InspoCarousel';
+
 function App() {
   return (
     <>
@@ -7,7 +10,10 @@ function App() {
           <h1 className='hero-text'>2024</h1>
         </div>
         <div>
-          <h2>15e Oktober | Rådhuset</h2>
+          <h2>
+            19e Oktober | &nbsp;
+            <a href='https://maps.app.goo.gl/txvyEMvxcYHoQf6b7'>Rådhuset</a>
+          </h2>
         </div>
         <div className='info-image-left'>
           <h1 className='info-text'>
@@ -26,6 +32,9 @@ function App() {
             <br></br>
             Upplev en fantastisk kväll med dans, mat, och dryck.
           </h1>
+        </div>
+        <div className='carousel-div'>
+          <InspoCarousel />
         </div>
       </div>
     </>

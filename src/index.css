@@ -17,20 +17,21 @@ h1 {
   font-style: normal;
   margin: 0;
   color: hsl(0, 0%, 59%);
+  text-size-adjust: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
-  display: flex;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
   font-style: normal;
   font-size: 4vw;
   text-size-adjust: auto;
-  justify-content: center;
-  align-items: center;
   color: antiquewhite;
   text-shadow: 4px 4px 5px black;
   margin-top: 20px;
+  text-align: center;
 }
 
 a {
@@ -42,7 +43,7 @@ a {
 
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(assets\Autumn_background.jpg);
+    url(assets/Autumn_background.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -51,7 +52,8 @@ body {
 
 .content-div {
   margin: 5%;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .announcement {
@@ -66,14 +68,11 @@ body {
 
 .hero-image {
   display: flex;
-  background-image: url(assets\ballroom_hero_01_fix.jpg);
-  /* width: min(1280px, 90%); */
+  background-image: url(assets/ballroom_hero_01_fix.jpg);
   width: 100%;
-  /* height: 450px; */
-  height: clamp(200px, 70vh, 450px);
+  height: clamp(200px, 70vh, 600px);
   background-position: top;
   background-size: cover;
-  /* position: relative; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -95,14 +94,17 @@ body {
   font-size: 25vh;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(2px 2px 5px black);
+  filter: drop-shadow(2px 4px 5px black);
+  text-size-adjust: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-image-left {
   display: flex;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(assets\mask_leaves_glitter.jpg);
-  width: clamp(100px, 80%, 830px);
+    url(assets/mask_leaves_glitter.jpg);
+  width: clamp(100px, 80%, 1040px);
   height: clamp(200px, 50vh, 350px);
   background-position: center;
   background-size: cover;
@@ -110,6 +112,7 @@ body {
   margin-bottom: 20px;
   justify-content: center;
   box-shadow: 4px 4px 5px black;
+  align-items: center;
 }
 
 .info-image-left .info-text {
@@ -125,9 +128,10 @@ body {
 }
 
 .info-image-right {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(assets\ballroom01.jpg);
-  width: clamp(100px, 80%, 830px);
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(assets/ballroom01.jpg);
+  width: clamp(100px, 80%, 1040px);
   height: clamp(200px, 50vh, 350px);
   background-position: center;
   background-size: cover;
@@ -135,7 +139,8 @@ body {
   margin-bottom: 20px;
   justify-content: center;
   box-shadow: 4px 4px 5px black;
-  float: right;
+  align-items: center;
+  align-self: flex-end;
 }
 
 .info-image-right .info-text {
@@ -152,9 +157,72 @@ body {
 }
 
 .carousel-div {
+  background-color: black;
   width: 80%;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
+  margin: 20px auto; /* Added margin for spacing */
   box-shadow: 4px 4px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px; /* Adjust this height as needed */
+  background-color: black; /* Ensure the background is black even within the carousel items */
+  overflow: hidden;
+}
+
+.carousel-item img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; /* Ensures the image is contained within the div */
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 10vh; /* Smaller font size for smaller screens */
+  }
+
+  h2 {
+    font-size: 2.5rem; /* Adjusted font size */
+    margin-top: 10px; /* Reduced margin */
+  }
+
+  .hero-image {
+    height: clamp(150px, 50vh, 250px); /* Adjust height for smaller screens */
+  }
+
+  .hero-image .hero-text {
+    font-size: 10vh; /* Adjust text size */
+  }
+
+  .info-image-left,
+  .info-image-right {
+    width: 90%; /* Full width on small screens */
+    height: 200px; /* Fixed height for better layout */
+  }
+
+  .info-image-left .info-text,
+  .info-image-right .info-text {
+    font-size: 1.5rem; /* Smaller text size */
+    margin: 5px; /* Adjust margin */
+  }
+
+  .carousel-div {
+    width: 100%; /* Full width on small screens */
+    margin: 10px auto; /* Adjust margin */
+  }
+
+  .carousel-item {
+    height: 250px; /* Adjust height for smaller screens */
+  }
+
+  .carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }

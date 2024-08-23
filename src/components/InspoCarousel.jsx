@@ -1,46 +1,32 @@
+import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselImage01 from '../assets/Autumn_background.jpg';
-import CarouselImage02 from '../assets/blackGoldMask.jpg';
-import CarouselImage03 from '../assets/Autumn_background.jpg';
 
-function CarouselFadeExample() {
+function InspoCarousel() {
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    const importImages = async () => {
+      // Dynamically import all images from the 'assets/Carousel' folder
+      const imageModules = import.meta.glob(
+        '../assets/Carousel/*.{png,jpg,jpeg,svg}'
+      );
+      const imagePaths = await Promise.all(
+        Object.values(imageModules).map(async (importFn) => await importFn())
+      );
+      setImages(imagePaths.map((mod) => mod.default));
+    };
+
+    importImages();
+  }, []);
+
   return (
     <Carousel fade>
-      <Carousel.Item>
-        <img
-          className='d-block w-100'
-          src={CarouselImage01}
-          alt='First slide'
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className='d-block w-100'
-          src={CarouselImage02}
-          alt='Second slide'
-        />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className='d-block w-100'
-          src={ExampleCarouselImage}
-          alt='Third slide'
-        />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
+      {images.map((src, index) => (
+        <Carousel.Item key={index}>
+          <img className='d-block w-100' src={src} alt={`Slide ${index + 1}`} />
+          <Carousel.Caption></Carousel.Caption>
+        </Carousel.Item>
+      ))}
     </Carousel>
   );
 }

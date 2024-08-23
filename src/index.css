@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'QTBasker Regular';
+  src:
+    local(''),
+    url('./assets/QTBasker_Regular.ttf') format('truetype');
+}
+
 h3 {
   font-family: 'Poiret One', sans-serif;
   font-weight: 400;
@@ -9,65 +16,213 @@ h1 {
   font-weight: 400;
   font-style: normal;
   margin: 0;
-  color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 59%);
+  text-size-adjust: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4vw;
+  text-size-adjust: auto;
+  color: antiquewhite;
+  text-shadow: 4px 4px 5px black;
+  margin-top: 20px;
+  text-align: center;
 }
 
 a {
   font-family: 'Gupter', serif;
   font-weight: 400;
   font-style: normal;
-  color: hsl(0, 0%, 10%);
+  color: antiquewhite;
 }
 
-.student {
-  font-family: Arial, sans-serif;
-  font-size: 2em;
-  padding: 10px;
-  border: 1px solid hsla(0, 0%, 50%, 0.8);
-}
-
-.student p {
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/Autumn_background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0;
 }
 
-.card {
-  border: 1px solid hsl(0, 0%, 90%);
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
-  padding: 20px;
+.content-div {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.announcement {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 300%;
+  color: beige;
+  font-weight: 400;
+}
+
+.hero-image {
+  display: flex;
+  background-image: url(assets/ballroom_hero_01_fix.jpg);
+  width: 100%;
+  height: clamp(200px, 70vh, 600px);
+  background-position: top;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 4px 4px 5px black;
+}
+
+.hero-image .hero-text {
+  background: linear-gradient(
+    180deg,
+    hsl(37, 54%, 21%) 0%,
+    hsl(37, 54%, 31%) 25%,
+    hsl(49, 100%, 41%) 50%,
+    hsl(37, 54%, 31%) 75%,
+    hsl(37, 54%, 21%) 100%
+  );
+  font-family: 'Pinyon Script', cursive, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25vh;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 4px 5px black);
+  text-size-adjust: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-image-left {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(assets/mask_leaves_glitter.jpg);
+  width: clamp(100px, 80%, 1040px);
+  height: clamp(200px, 50vh, 350px);
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  box-shadow: 4px 4px 5px black;
+  align-items: center;
+}
+
+.info-image-left .info-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(1rem, 4vw, 3rem);
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+  text-shadow: 4px 4px 5px black;
   margin: 10px;
-  text-align: center;
-  max-width: 250px;
-  display: inline-block;
 }
 
-.card .cardTitle {
-  font-family: 'Limelight', sans-serif;
-  font-weight: 400;
+.info-image-right {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(assets/ballroom01.jpg);
+  width: clamp(100px, 80%, 1040px);
+  height: clamp(200px, 50vh, 350px);
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  box-shadow: 4px 4px 5px black;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.info-image-right .info-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
   font-style: normal;
-  margin: 0;
-  color: hsl(0, 0%, 20%);
+  font-size: clamp(1rem, 4vw, 3rem);
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+  text-shadow: 4px 4px 5px black;
+  margin: 10px;
+  text-align: end;
 }
 
-.card .cardText {
-  font-family: 'Gupter', serif;
-  font-weight: 400;
-  font-style: normal;
-  color: hsl(0, 0%, 20%);
+.carousel-div {
+  background-color: black;
+  width: 80%;
+  margin: 20px auto; /* Added margin for spacing */
+  box-shadow: 4px 4px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures content doesn't overflow */
 }
 
-.card .cardImg {
-  max-width: 60%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px; /* Adjust this height as needed */
+  background-color: black; /* Ensure the background is black even within the carousel items */
+  overflow: hidden;
 }
 
-.button {
-  background-color: hsl(200, 100%, 50%);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
+.carousel-item img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; /* Ensures the image is contained within the div */
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 10vh; /* Smaller font size for smaller screens */
+  }
+
+  h2 {
+    font-size: 2.5rem; /* Adjusted font size */
+    margin-top: 10px; /* Reduced margin */
+  }
+
+  .hero-image {
+    height: clamp(150px, 50vh, 250px); /* Adjust height for smaller screens */
+  }
+
+  .hero-image .hero-text {
+    font-size: 10vh; /* Adjust text size */
+  }
+
+  .info-image-left,
+  .info-image-right {
+    width: 90%; /* Full width on small screens */
+    height: 200px; /* Fixed height for better layout */
+  }
+
+  .info-image-left .info-text,
+  .info-image-right .info-text {
+    font-size: 1.5rem; /* Smaller text size */
+    margin: 5px; /* Adjust margin */
+  }
+
+  .carousel-div {
+    width: 100%; /* Full width on small screens */
+    margin: 10px auto; /* Adjust margin */
+  }
+
+  .carousel-item {
+    height: 250px; /* Adjust height for smaller screens */
+  }
+
+  .carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }

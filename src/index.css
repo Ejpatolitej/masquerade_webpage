@@ -156,6 +156,45 @@ body {
   text-align: end;
 }
 
+.info-image-center {
+  display: flex;
+  width: clamp(100px, 80%, 1040px);
+  height: clamp(200px, 50vh, 350px);
+  background-position: center;
+  background-size: cover;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.info-image-center .info-video {
+  background-color: black;
+  display: flex;
+  width: clamp(100px, 80%, 1040px);
+  height: clamp(200px, 60vh, 450px);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  box-shadow: 4px 4px 5px black;
+  align-items: center;
+  align-self: center;
+}
+
+.info-image-center .info-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(1rem, 4vw, 3rem);
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+  text-shadow: 4px 4px 5px black;
+  margin: 10px;
+  text-align: center;
+}
+
 .carousel-div {
   background-color: black;
   width: 80%;
@@ -206,6 +245,16 @@ body {
     height: 200px; /* Fixed height for better layout */
   }
 
+  .info-image-center {
+    width: 100%;
+    height: 200px;
+  }
+
+  .info-image-center .info-video {
+    width: 100%;
+    height: 200px;
+  }
+
   .info-image-left .info-text,
   .info-image-right .info-text {
     font-size: 1.5rem; /* Smaller text size */
@@ -215,10 +264,11 @@ body {
   .carousel-div {
     width: 100%; /* Full width on small screens */
     margin: 10px auto; /* Adjust margin */
+    height: 200px;
   }
 
   .carousel-item {
-    height: 250px; /* Adjust height for smaller screens */
+    height: 100%; /* Adjust height for smaller screens */
   }
 
   .carousel-item img {

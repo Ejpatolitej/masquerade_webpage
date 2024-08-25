@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import InspoCarousel from './components/InspoCarousel';
+import video from './assets/Masquerade_ballroom.mp4';
 
 function App() {
   return (
@@ -24,19 +25,19 @@ function App() {
         <div className='info-image-left'>
           <h1 className='info-text'>
             Välkomna till våran Höstmaskerad!
-            <br></br>
+            <br />
             Plocka fram era finaste balkläder och på med en elegant mask.
-            <br></br>
+            <br />
             Upplev en fantastisk kväll med dans, mat, och dryck.
           </h1>
         </div>
         <div className='info-image-right'>
           <h1 className='info-text'>
-            Välkomna till våran Höstmaskerad!
-            <br></br>
-            Plocka fram era finaste balkläder och på med en elegant mask.
-            <br></br>
-            Upplev en fantastisk kväll med dans, mat, och dryck.
+            Nedanför kommer info, inspo, och annat!
+            <br />
+            Undrar ni över något, eller vill ha med plus en,
+            <br />
+            Skriv till Jack.
           </h1>
         </div>
         <div>
@@ -44,6 +45,20 @@ function App() {
         </div>
         <div className='carousel-div'>
           <InspoCarousel />
+        </div>
+        <div>
+          <h2>
+            <a
+              href='https://youtube.com/playlist?list=PLgM0bfYIGz3RXa5e-eKliIb99mILmbY5A&si=gjvmsG1jjJyP_U-v'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Ballroom Dance Tutorial
+            </a>
+          </h2>
+        </div>
+        <div className='info-image-center'>
+          <video className='info-video' src={video} autoPlay muted loop></video>
         </div>
       </div>
     </>

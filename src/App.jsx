@@ -21,6 +21,8 @@ function App() {
               Rådhuset
             </a>
           </h2>
+          <br />
+          <h3>RSVP senast 12e Oktober</h3>
         </div>
         <div className='info-image-left'>
           <h1 className='info-text'>

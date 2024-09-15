@@ -108,8 +108,6 @@ body {
 
 .info-image-left {
   display: flex;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(assets/mask_leaves_glitter.jpg);
   width: clamp(100px, 80%, 1040px);
   height: clamp(200px, 50vh, 350px);
   background-position: center;
@@ -135,8 +133,6 @@ body {
 
 .info-image-right {
   display: flex;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(assets/ballroom01.jpg);
   width: clamp(100px, 80%, 1040px);
   height: clamp(200px, 50vh, 350px);
   background-position: center;
@@ -181,7 +177,7 @@ body {
   width: clamp(100px, 80%, 1040px);
   height: clamp(200px, 60vh, 450px);
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   justify-content: center;
   box-shadow: 4px 4px 5px black;
   align-items: center;
@@ -234,6 +230,11 @@ body {
 
   h2 {
     font-size: 2.5rem; /* Adjusted font size */
+    margin-top: 10px; /* Reduced margin */
+  }
+
+  h3 {
+    font-size: 1.5rem; /* Adjusted font size */
     margin-top: 10px; /* Reduced margin */
   }
 

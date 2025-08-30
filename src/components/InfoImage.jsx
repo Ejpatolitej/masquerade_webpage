@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../index.css';
 
-// InfoImage Component
 const InfoImage = ({ text, image, align }) => {
   const isLeftAligned = align === 'left';
 

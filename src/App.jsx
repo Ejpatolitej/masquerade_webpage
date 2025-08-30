@@ -8,13 +8,13 @@ function App() {
     <>
       <div className='content-div'>
         <div className='hero-image'>
-          <h1 className='hero-text'>Höstbalen</h1>
-          <h1 className='hero-text'>2025</h1>
+          <h1 className='hero-text-big'>Cocktail Evening</h1>
+          <h1 className='hero-text-small'>2025</h1>
         </div>
 
         <div>
           <h2>
-            19e Oktober | &nbsp;
+            18e Oktober | &nbsp;
             <a
               href='https://maps.app.goo.gl/txvyEMvxcYHoQf6b7'
               target='_blank'
@@ -25,11 +25,11 @@ function App() {
           </h2>
           <h2>Kl 19.00</h2>
           <br />
-          <h3>RSVP senast 12e Oktober</h3>
+          <h3>RSVP senast 11e Oktober</h3>
         </div>
 
         <InfoImage
-          text='Välkomna till våran Höstmaskerad! Plocka fram era finaste balkläder och på med en elegant mask. Upplev en fantastisk kväll med dans, mat, och dryck.'
+          text='Välkomna till en fantastisk cocktail kväll! Ta på er en elegant klänning eller snygg kostym. Mingla, spela, och njut av god mat och dryck i trevligt sällskap.'
           image='../src/assets/ctl_info_01.jpg'
           align='left'
         />
@@ -47,12 +47,12 @@ function App() {
         </div>
 
         <InfoImage
-          text='RSVP sker med Swish 100kr per person till Jack, senast 12e Oktober.'
+          text='RSVP sker med Swish 150kr per person till Jack, senast 12e Oktober.'
           image='../src/assets/ctl_info_03.jpg'
           align='left'
         />
         <InfoImage
-          text='Det kommer bjudas på bubbel och plockmat. Men vill ni bli mätta och fulla, ät innan och ta med egen dricka!'
+          text='Det kommer bjudas på lite alkohol och plockmat. Men vill ni bli mätta och fulla, ät innan och ta med egen dricka!'
           image='../src/assets/ctl_info_04.jpg'
           align='right'
         />

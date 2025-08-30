@@ -87,7 +87,7 @@ body {
   margin-top: 2%;
 }
 
-.hero-image .hero-text {
+.hero-image .hero-text-big {
   background: linear-gradient(
     180deg,
     hsl(37, 54%, 21%) 0%,
@@ -99,6 +99,28 @@ body {
   font-family: 'Poiret One', sans-serif;
   font-weight: 1000;
   font-style: normal;
+  font-size: 25vh;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 4px 5px black);
+  text-size-adjust: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image .hero-text-small {
+  background: linear-gradient(
+    180deg,
+    hsl(37, 54%, 21%) 0%,
+    hsl(37, 54%, 31%) 25%,
+    hsl(49, 100%, 41%) 50%,
+    hsl(37, 54%, 31%) 75%,
+    hsl(37, 54%, 21%) 100%
+  );
+  font-family: 'Poiret One', sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 20vh;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(2px 4px 5px black);

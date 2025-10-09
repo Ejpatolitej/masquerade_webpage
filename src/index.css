@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Tangerine:wght@400;700&display=swap');
 @font-face {
   font-family: 'QTBasker Regular';
   src:
@@ -49,7 +50,7 @@ a {
 
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(assets/cocktail_background_01.jpg);
+    url(assets/snowy_background_01.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -75,7 +76,7 @@ body {
 
 .hero-image {
   display: flex;
-  background-image: url(assets/cocktail_hero_01_fix.jpg);
+  background-image: url(assets/winter_hero_01.jpg);
   width: 100%;
   height: clamp(200px, 70vh, 600px);
   background-position: top;
@@ -90,19 +91,19 @@ body {
 .hero-image .hero-text-big {
   background: linear-gradient(
     180deg,
-    hsl(37, 54%, 21%) 0%,
-    hsl(37, 54%, 31%) 25%,
-    hsl(49, 100%, 41%) 50%,
-    hsl(37, 54%, 31%) 75%,
-    hsl(37, 54%, 21%) 100%
+    hsl(0, 0%, 100%) 0%,
+    hsl(182, 100%, 85%) 25%,
+    hsl(167, 90%, 52%) 50%,
+    hsl(182, 100%, 85%) 75%,
+    hsl(0, 0%, 100%) 100%
   );
-  font-family: 'Poiret One', sans-serif;
+  font-family: 'Tangerine', cursive;
   font-weight: 1000;
   font-style: normal;
   font-size: 25vh;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(2px 4px 5px black);
+  filter: drop-shadow(5px 4px 5px black);
   text-size-adjust: auto;
   justify-content: center;
   align-items: center;
@@ -117,7 +118,7 @@ body {
     hsl(37, 54%, 31%) 75%,
     hsl(37, 54%, 21%) 100%
   );
-  font-family: 'Poiret One', sans-serif;
+  font-family: 'Tangerine', cursive;
   font-weight: 1000;
   font-style: normal;
   font-size: 20vh;

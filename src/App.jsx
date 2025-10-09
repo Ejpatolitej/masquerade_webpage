@@ -8,8 +8,8 @@ function App() {
     <>
       <div className='content-div'>
         <div className='hero-image'>
-          <h1 className='hero-text-big'>Cocktail Evening</h1>
-          <h1 className='hero-text-small'>2025</h1>
+          <h1 className='hero-text-big'>Winter Cocktail Masquerade</h1>
+          <h1 className='hero-text-big'>2025</h1>
         </div>
 
         <div>
@@ -30,12 +30,12 @@ function App() {
 
         <InfoImage
           text='Välkomna till en fantastisk cocktail kväll! Ta på er en elegant klänning eller snygg kostym. Mingla, spela, och njut av god mat och dryck i trevligt sällskap.'
-          image='../src/assets/ctl_info_01.jpg'
+          image='../src/assets/winter_info_01.jpg'
           align='left'
         />
         <InfoImage
           text='Nedanför kommer info, inspo, och annat! Undrar ni över något, eller vill ha med plus en, skriv till Jack.'
-          image='../src/assets/ctl_info_02.jpg'
+          image='../src/assets/winter_info_03.jpg'
           align='right'
         />
 
@@ -48,12 +48,12 @@ function App() {
 
         <InfoImage
           text='RSVP sker med Swish 150kr per person till Jack, senast 12e Oktober.'
-          image='../src/assets/ctl_info_03.jpg'
+          image='../src/assets/winter_info_02.jpg'
           align='left'
         />
         <InfoImage
           text='Det kommer bjudas på lite alkohol och plockmat. Men vill ni bli mätta och fulla, ät innan och ta med egen dricka!'
-          image='../src/assets/ctl_info_04.jpg'
+          image='../src/assets/winter_info_04.jpg'
           align='right'
         />
       </div>

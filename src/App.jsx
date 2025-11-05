@@ -14,7 +14,7 @@ function App() {
 
         <div>
           <h2>
-            18e Oktober | &nbsp;
+            12e December | &nbsp;
             <a
               href='https://maps.app.goo.gl/txvyEMvxcYHoQf6b7'
               target='_blank'
@@ -25,7 +25,7 @@ function App() {
           </h2>
           <h2>Kl 19.00</h2>
           <br />
-          <h3>RSVP senast 11e Oktober</h3>
+          <h3>RSVP senast 1a December</h3>
         </div>
 
         <InfoImage
@@ -47,7 +47,7 @@ function App() {
         </div>
 
         <InfoImage
-          text='RSVP sker med Swish 150kr per person till Jack, senast 12e Oktober.'
+          text='RSVP sker med Swish 150kr per person till Jack, senast 1a December.'
           image='../src/assets/winter_info_02.jpg'
           align='left'
         />

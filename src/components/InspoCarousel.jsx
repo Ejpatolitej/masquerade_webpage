@@ -6,7 +6,6 @@ function InspoCarousel() {
 
   useEffect(() => {
     const importImages = async () => {
-      // Dynamically import all images from the 'assets/Carousel' folder
       const imageModules = import.meta.glob(
         '../assets/Carousel/*.{png,jpg,jpeg,svg}'
       );

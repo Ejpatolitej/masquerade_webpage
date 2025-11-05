@@ -1,21 +1,20 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import InspoCarousel from './components/InspoCarousel';
-import InfoImage from './components/InfoImage'; // Import the InfoImage component
-import video from './assets/Masquerade_ballroom.mp4';
+import InfoImage from './components/InfoImage';
 
 function App() {
   return (
     <>
       <div className='content-div'>
         <div className='hero-image'>
-          <h1 className='hero-text'>Höstbalen</h1>
-          <h1 className='hero-text'>2024</h1>
+          <h1 className='hero-text-big'>Winter Cocktail Masquerade</h1>
+          <h1 className='hero-text-big'>2025</h1>
         </div>
 
         <div>
           <h2>
-            19e Oktober | &nbsp;
+            12e December | &nbsp;
             <a
               href='https://maps.app.goo.gl/txvyEMvxcYHoQf6b7'
               target='_blank'
@@ -26,17 +25,17 @@ function App() {
           </h2>
           <h2>Kl 19.00</h2>
           <br />
-          <h3>RSVP senast 12e Oktober</h3>
+          <h3>RSVP senast 1a December</h3>
         </div>
 
         <InfoImage
-          text='Välkomna till våran Höstmaskerad! Plocka fram era finaste balkläder och på med en elegant mask. Upplev en fantastisk kväll med dans, mat, och dryck.'
-          image='../src/assets/mask_leaves_glitter.jpg'
+          text='Välkomna till en fantastisk cocktail kväll! Ta på er en elegant klänning eller snygg kostym. Mingla, spela, och njut av god mat och dryck i trevligt sällskap.'
+          image='../src/assets/winter_info_01.jpg'
           align='left'
         />
         <InfoImage
           text='Nedanför kommer info, inspo, och annat! Undrar ni över något, eller vill ha med plus en, skriv till Jack.'
-          image='../src/assets/ballroom01.jpg'
+          image='../src/assets/winter_info_03.jpg'
           align='right'
         />
 
@@ -47,29 +46,14 @@ function App() {
           <InspoCarousel />
         </div>
 
-        <div>
-          <h2>
-            <a
-              href='https://youtube.com/playlist?list=PLgM0bfYIGz3RXa5e-eKliIb99mILmbY5A&si=gjvmsG1jjJyP_U-v'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Ballroom Dance Tutorial
-            </a>
-          </h2>
-        </div>
-
-        <div className='info-image-center'>
-          <video className='info-video' src={video} autoPlay muted loop></video>
-        </div>
         <InfoImage
-          text='RSVP sker med Swish 100kr per person till Jack, senast 12e Oktober.'
-          image='../src/assets/blackGoldMask.jpg'
+          text='RSVP sker med Swish 150kr per person till Jack, senast 1a December.'
+          image='../src/assets/winter_info_02.jpg'
           align='left'
         />
         <InfoImage
-          text='Det kommer bjudas på bubbel och plockmat. Men vill ni bli mätta och fulla, ät innan och ta med egen dricka!'
-          image='../src/assets/colorful_ballroom.jpg'
+          text='Det kommer bjudas på lite alkohol och plockmat. Men vill ni bli mätta och fulla, ät innan och ta med egen dricka!'
+          image='../src/assets/winter_info_04.jpg'
           align='right'
         />
       </div>

@@ -103,7 +103,7 @@ body {
   font-size: 25vh;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(5px 4px 5px black);
+  filter: drop-shadow(1px 4px 2px rgb(0, 0, 0));
   text-size-adjust: auto;
   justify-content: center;
   align-items: center;
@@ -266,8 +266,8 @@ body {
     height: clamp(150px, 50vh, 250px); /* Adjust height for smaller screens */
   }
 
-  .hero-image .hero-text {
-    font-size: 10vh; /* Adjust text size */
+  .hero-image .hero-text-big {
+    font-size: 8vh; /* Adjust text size */
   }
 
   .info-image-left,

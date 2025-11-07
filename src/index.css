@@ -101,6 +101,7 @@ body {
   font-weight: 1000;
   font-style: normal;
   font-size: 25vh;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(5px 4px 5px black);
@@ -122,6 +123,7 @@ body {
   font-weight: 1000;
   font-style: normal;
   font-size: 20vh;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(2px 4px 5px black);

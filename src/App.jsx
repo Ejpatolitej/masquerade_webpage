@@ -2,6 +2,10 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import InspoCarousel from './components/InspoCarousel';
 import InfoImage from './components/InfoImage';
+import winterInfo01 from './assets/winter_info_01.jpg';
+import winterInfo02 from './assets/winter_info_02.jpg';
+import winterInfo03 from './assets/winter_info_03.jpg';
+import winterInfo04 from './assets/winter_info_04.jpg';
 
 function App() {
   return (
@@ -30,12 +34,12 @@ function App() {
 
         <InfoImage
           text='Välkomna till en fantastisk cocktail kväll! Ta på er en elegant klänning eller snygg kostym. Mingla, spela, och njut av god mat och dryck i trevligt sällskap.'
-          image='../src/assets/winter_info_01.jpg'
+          image={winterInfo01}
           align='left'
         />
         <InfoImage
           text='Nedanför kommer info, inspo, och annat! Undrar ni över något, eller vill ha med plus en, skriv till Jack.'
-          image='../src/assets/winter_info_03.jpg'
+          image={winterInfo03}
           align='right'
         />
 
@@ -48,12 +52,12 @@ function App() {
 
         <InfoImage
           text='RSVP sker med Swish 150kr per person till Jack, senast 1a December.'
-          image='../src/assets/winter_info_02.jpg'
+          image={winterInfo02}
           align='left'
         />
         <InfoImage
           text='Det kommer bjudas på lite alkohol och plockmat. Men vill ni bli mätta och fulla, ät innan och ta med egen dricka!'
-          image='../src/assets/winter_info_04.jpg'
+          image={winterInfo04}
           align='right'
         />
       </div>
